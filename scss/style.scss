@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'fonts';
+@import 'swiper-bundle';
 
 body {
     color: #040404;
@@ -340,6 +341,134 @@ body {
         left: 600px;
     }
 }
+
+.blog {
+    margin-bottom: 100px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        &-img {
+            margin-bottom: 20px;
+        }
+
+        &-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 10px;
+            min-height: 46px;
+        }
+
+        &-text {
+            margin-bottom: 10px;
+        }
+
+        &-link {
+            font-size: 12px;
+            color: #363636;
+        }
+    }
+}
+
+.blog__slider {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.blog__button {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 50%;
+}
+
+.swiper-button-left {
+    transform: translateX(-42px)
+}
+
+.swiper-button-right {
+    transform: translateX(11px)
+}
+
+.blog {
+    &__quote {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 20px;
+
+        &-box {
+            flex-basis: 434px;
+        }
+    }
+}
+
+.blockquote {
+    margin-bottom: 30px;
+
+    &__name {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-style: normal;
+
+        & span {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 12px;
+            color: #9F6B08;
+            font-weight: 400;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+    }
+}
+
+.footer {
+    padding: 100px 0 80px;
+    background-color: #363636;
+    color: #fff;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 20px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    &__info {
+        &-item {
+            margin-bottom: 40px;
+
+            & dt {
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            & dd {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+
+
 
 
 
