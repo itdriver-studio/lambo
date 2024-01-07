@@ -436,7 +436,8 @@ body {
     padding: 100px 0 80px;
     background-color: #363636;
     color: #fff;
-    &__top{
+
+    &__top {
         display: flex;
         justify-content: space-between;
         gap: 0 20px;
@@ -447,6 +448,15 @@ body {
         font-weight: 300;
         font-size: 32px;
         margin-bottom: 50px;
+    }
+
+    &__address {
+        flex-basis: 462px;
+
+        &-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 
     &__info {
@@ -464,6 +474,30 @@ body {
             }
         }
     }
+}
+
+.social-list {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.footer__address-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer__bottom {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#map iframe {
+    max-height: 250px;
+    max-width: 100%;
 }
 
 
