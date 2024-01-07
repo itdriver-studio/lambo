@@ -10,6 +10,10 @@ body {
     font-family: 'RobotoCondensedRegular', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .big-container {
     max-width: 1220px;
     padding: 0 10px;
@@ -134,8 +138,14 @@ body {
             display: block;
         }
 
+        &--second {
+            gap: 0 20px;
+        }
+
         &--third {
             padding-top: 66px;
+            gap: 0 20px;
+
         }
 
         &-textbox {
@@ -509,7 +519,10 @@ body {
 
 
 
-
+.menu-mobile,
+.menu-btn {
+    display: none;
+}
 
 
 @import 'media';
