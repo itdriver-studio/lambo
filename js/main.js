@@ -22,3 +22,7 @@ const menuMobile = document.querySelector('.menu-mobile');
 menuBtn.addEventListener('click', () => {
     menuMobile.classList.toggle('menu--open');
 });
+
+menuMobile.addEventListener('click', () => {
+    menuMobile.classList.remove('menu--open');
+})
